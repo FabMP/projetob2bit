@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Nunito', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+    font-size: 1.3vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#login {
+    padding: 2vw;
+    box-shadow: 0 4px 8vw 0 rgba(0, 0, 0, 0.384)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#profile {
+    padding: 2vw;
+    padding-bottom: 1vw;
+    box-shadow: 0 4px 8vw 0 rgba(0, 0, 0, 0.384);
+    width: 30%;
 }
 
-.App-link {
-  color: #61dafb;
+#logo {
+    margin: 2.3vw;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#logo > img {
+    height: 7vw;
+}
+
+input {
+    padding: 1.2vw;
+    font-size: 1vw;
+    height: 3.5vw;
+    background-color: #F1F1F1;
+    border-radius: 0.5vw;
+    width: 100%;
+}
+
+.campoinput {
+    margin-bottom: 2vw;
+}
+
+.dados {
+    padding: 1.2vw;
+    height: 3.5vw;
+    background-color: #F1F1F1;
+    border-radius: 0.5vw;
+    width: 100%;
+    margin-bottom: 1.5vw;
+}
+
+#sign-in {
+    color: white;
+    height: 3.5vw;
+    width: 100%;
+    border-radius: 0.5vw;
+    background-color: #02274D;
+}
+
+#log-out {
+    color: white;
+    height: 2.5vw;
+    width: 5vw;
+    border-radius: 0.5vw;
+}
+
+#profilepic {
+    height: 5vw;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+}
+
+.azul {
+    color: #02274D;
 }
